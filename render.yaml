@@ -48,3 +48,4 @@ services:
 databases:
   - name: strapi-db
     plan: starter
+    dirdir
