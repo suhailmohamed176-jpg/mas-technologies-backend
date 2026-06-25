@@ -11,10 +11,7 @@ module.exports = {
     return await strapi.db.query('api::product.product').create({ data });
   },
   async update(id, data) {
-    return await strapi.db.query('api::product.product').update({
-      where: { id },
-      data,
-    });
+    return await strapi.db.query('api::product.product').update({ where: { id }, data });
   },
   async delete(id) {
     return await strapi.db.query('api::product.product').delete({ where: { id } });
